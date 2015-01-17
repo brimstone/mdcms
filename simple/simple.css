@@ -1,0 +1,22 @@
+body {
+	background-color: #eee;
+	margin: 0;
+}
+
+#content {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background: none repeat scroll 0 0 #fff;
+	border-color: #ddd #aaa #aaa #ddd;
+	border-image: none;
+	border-style: solid;
+	border-width: 1px;
+	margin: 2.5em auto 0;
+	padding: 2em;
+	display: block;
+	max-width: 720px;
+	min-width: 360px;
+	width: 80%;
+}

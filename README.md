@@ -27,3 +27,7 @@ Libraries
 ---------
 The top 30k or so of the main cms.js file is from chjj's
 [marked](https://github.com/chjj/marked) javascript library.
+
+License
+-------
+Since marked is MIT, this project is [licensed](LICENSE.md) under the same.

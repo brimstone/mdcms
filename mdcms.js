@@ -1337,8 +1337,11 @@ renderer.link = function ( href, title, text) {
 
 		}
 	} else {
-		// TODO need to determine if this is an https:// link or something
-		return '<a href="#!' + href + '">' + text + '</a>';
+		if (href.endsWith(".md")) {
+			return '<a href="#!' + href + '">' + text + '</a>';
+		} else {
+			return '<a href="' + href + '">' + text + '</a>';
+		}
 	}
 }
 

@@ -1360,7 +1360,7 @@ function getpage(path, callback) {
 // this does the main brunt of loading the markdown page, rendering it, then
 // replacing variables elsewhere.
 function load(node) {
-	var url = window.location.hash.replace("#!")
+	var url = window.location.hash.replace("#!", "")
 	// let our user specify a default
 	if (url == "")
 		if (node.dataset['default'])

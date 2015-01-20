@@ -8,3 +8,5 @@ Examples
 [Foundation](foundation)
 
 [Pure CSS](purecss)
+
+[Semantic UI](semantic-ui)

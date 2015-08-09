@@ -10,3 +10,6 @@ Examples
 [Pure CSS](purecss)
 
 [Semantic UI](semantic-ui)
+
+[Tufte](tufte)
+

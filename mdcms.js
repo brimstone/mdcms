@@ -1,3 +1,5 @@
+;(function() {
+
 /**
  * marked - a markdown parser
  * Copyright (c) 2011-2014, Christopher Jeffrey. (MIT Licensed)
@@ -1273,7 +1275,9 @@ if (typeof module !== 'undefined' && typeof exports === 'object') {
 
 // Markdown CMS starts here
 
+function mdcms() {
 // Walk our nodes and find the ones we need to template out later
+
 nodes = [];
 nodewalk = function(node, callback) {
 	for (var i = 0; i < node.length; i++) {
@@ -1398,3 +1402,23 @@ nodewalk(document.getElementsByTagName('html'), function(node){
 		}
 	}
 }); 
+
+}
+
+window.onload = function(){
+	mdcms();
+};
+
+
+if (typeof module !== 'undefined' && typeof exports === 'object') {
+  module.exports = mdcms;
+} else if (typeof define === 'function' && define.amd) {
+  define(function() { return mdcms; });
+} else {
+  this.mdcms = mdcms;
+}
+
+}).call(function() {
+  return this || (typeof window !== 'undefined' ? window : global);
+}());
+
